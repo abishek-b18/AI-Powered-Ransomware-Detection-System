@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>🛡️ Dashboard</h2>
+
+<div>
+<a href="/monitor">Monitor</a>
+<a href="/reports">Reports</a>
+<a href="/admin">Admin</a>
+<a href="/logout">Logout</a>
+</div>
+
+</nav>
+
+<div class="dashboard">
+
+<h1>
+Welcome, {{ username }}
+</h1>
+
+<div class="card">
+
+<h2>Threat Monitoring</h2>
+
+<p>
+Monitor ransomware threats in real time.
+</p>
+
+<a href="/monitor" class="btn">
+Start Monitoring
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
